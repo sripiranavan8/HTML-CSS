@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid 1</title>
+</head>
+<style>
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        /*grid-auto-rows: 100px;*/
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .nested {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        grid-auto-rows: minmax(70px, auto);
+    }
+
+    .wrapper>div {
+        background: #eee;
+        padding: 1em;
+    }
+
+    .wrapper>div:nth-child(odd) {
+        background: #aaa;
+    }
+    .nested > div{
+        border: 1px solid #bbb;
+        padding: 1em;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, unde.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsa. In quod, numquam fugiat vel,
+            saepe magni atque perferendis labore sequi architecto illum tempore facere earum voluptate iusto doloribus
+            autem delectus iste nostrum rem eaque hic. Quas impedit perferendis mollitia?
+        </div>
+        <div class="nested">
+            <div>
+                Lorem, ipsum.
+            </div>
+            <div>
+                Lorem, ipsum.
+            </div>
+            <div>
+                Lorem, ipsum.
+            </div>
+            <div>
+                Lorem, ipsum.
+            </div>
+            <div>
+                Lorem, ipsum.
+            </div>
+            <div>
+                Lorem, ipsum.
+            </div>
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ducimus.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quisquam?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, reiciendis.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ut!
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, officia.
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+</head>
+<style>
+    .wrapper {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        /*grid-column-gap: 1em;
+        grid-row-gap: 1em;*/
+        grid-gap: 1em;
+    }
+
+    .wrapper>div {
+        background: #eee;
+        padding: 1em;
+    }
+
+    .wrapper>div:nth-child(odd) {
+        background: #aaa;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, nobis deleniti excepturi reprehenderit
+            quis ducimus quo saepe distinctio explicabo, dignissimos unde, ut repellendus? Voluptatum modi dolor
+            eveniet, porro saepe odit.
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nobis, dolorum quisquam aperiam veritatis
+            illum exercitationem culpa dicta molestias, in tempora incidunt accusantium quo delectus eaque, quis eveniet
+            deserunt mollitia! Recusandae facilis deserunt sunt hic esse aperiam harum quis! Culpa vitae facere aliquam
+            quasi recusandae doloribus voluptatibus impedit obcaecati molestias.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, animi cumque? Eos laboriosam necessitatibus blanditiis excepturi voluptas ipsam repudiandae, magnam temporibus nisi quam quia dolorem quidem praesentium saepe at totam possimus et aspernatur doloribus molestiae adipisci dolor expedita! Ex odit magni cumque. Esse cupiditate unde et tempora inventore asperiores reprehenderit?
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo optio quis placeat? Fugit quos voluptatum blanditiis, cum corporis quis. Esse, illo totam. Ea, laudantium autem laborum mollitia dignissimos sit iste possimus molestiae culpa nobis saepe suscipit aspernatur. Illum, natus corporis!
+        </div>
+    </div>
+</body>
+
+</html>
